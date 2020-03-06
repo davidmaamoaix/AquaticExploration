@@ -1,0 +1,9 @@
+modLoader="javafml"
+loaderVersion="[25,)"
+authors="David Ma"
+
+[[mods]]
+modId="aquaticexploration"
+version="1.0.0"
+displayName="Aquatic Exploration"
+description='A Minecraft Mod that adds more ocean exploration.'

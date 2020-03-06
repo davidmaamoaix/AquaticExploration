@@ -1,0 +1,11 @@
+{
+	"item.aquaticexploration.ancient_shell": "Ancient Shell",
+	"item.aquaticexploration.aquatic_journal": "Aquatic Journal",
+
+	"itemGroup.aquaticexploration": "Aquatic Exploration",
+
+	"tooltip.aquaticexploration.ancient_shell": "What secrets does it hold?\nMaybe I should try washing it in water.",
+	"tooltip.aquaticexploration.aquatic_journal": "Not your average highschool textbook.",
+
+	"chat.aquaticexploration.not_ocean": "I washed the shell in water, but with little effect.\nMaybe only the ocean can decipher the secrets in the shell."
+}
