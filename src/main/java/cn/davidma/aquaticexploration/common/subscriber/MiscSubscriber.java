@@ -2,7 +2,7 @@ package cn.davidma.aquaticexploration.common.subscriber;
 
 import cn.davidma.aquaticexploration.common.AquaticExploration;
 import cn.davidma.aquaticexploration.common.progress.Progress;
-import cn.davidma.aquaticexploration.util.StringHelper;
+import cn.davidma.aquaticexploration.util.helper.StringHelper;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;

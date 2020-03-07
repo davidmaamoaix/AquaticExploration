@@ -2,7 +2,7 @@ package cn.davidma.aquaticexploration.common.capability;
 
 import cn.davidma.aquaticexploration.common.progress.AquaticProgresses;
 import cn.davidma.aquaticexploration.common.progress.Progress;
-import cn.davidma.aquaticexploration.util.StringHelper;
+import cn.davidma.aquaticexploration.util.helper.StringHelper;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.INBT;
 import net.minecraft.nbt.ListNBT;
@@ -25,7 +25,7 @@ public class PlayerProgressCapabilityStorage implements Capability.IStorage<Play
 			ListNBT progresses = tag.getList(StringHelper.PROGRESS_LIST_TAG, Constants.NBT.TAG_STRING);
 			progresses.forEach(stringTag -> {
 				ResourceLocation key = new ResourceLocation(stringTag.getString());
-				Progress progress = AquaticProgresses.PROGRESS_REGISTRY.getValue(key);
+				Progress progress = AquaticProgresses.PROGRESS_REGISTRY.get().getValue(key);
 				
 				if (progress != null) {
 					cap.addProgress(progress);

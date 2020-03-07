@@ -1,7 +1,7 @@
 package cn.davidma.aquaticexploration.common.capability;
 
 import cn.davidma.aquaticexploration.common.AquaticExploration;
-import cn.davidma.aquaticexploration.util.StringHelper;
+import cn.davidma.aquaticexploration.util.helper.StringHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraftforge.event.AttachCapabilitiesEvent;

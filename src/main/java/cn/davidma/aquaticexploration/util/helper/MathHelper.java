@@ -1,4 +1,4 @@
-package cn.davidma.aquaticexploration.util;
+package cn.davidma.aquaticexploration.util.helper;
 
 public class MathHelper {
 	

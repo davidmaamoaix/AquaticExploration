@@ -1,7 +1,7 @@
 package cn.davidma.aquaticexploration.common.subscriber;
 
 import cn.davidma.aquaticexploration.common.AquaticExploration;
-import cn.davidma.aquaticexploration.util.StringHelper;
+import cn.davidma.aquaticexploration.util.helper.StringHelper;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraftforge.event.entity.player.EntityItemPickupEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

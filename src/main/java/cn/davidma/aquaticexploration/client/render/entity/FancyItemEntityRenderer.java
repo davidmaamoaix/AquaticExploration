@@ -4,7 +4,7 @@ import java.util.Random;
 
 import com.mojang.blaze3d.platform.GlStateManager;
 
-import cn.davidma.aquaticexploration.util.StringHelper;
+import cn.davidma.aquaticexploration.util.helper.StringHelper;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.BufferBuilder;
 import net.minecraft.client.renderer.RenderHelper;

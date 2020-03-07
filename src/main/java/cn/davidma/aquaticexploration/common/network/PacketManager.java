@@ -1,7 +1,7 @@
 package cn.davidma.aquaticexploration.common.network;
 
 import cn.davidma.aquaticexploration.client.util.ClientPacketHandler;
-import cn.davidma.aquaticexploration.util.StringHelper;
+import cn.davidma.aquaticexploration.util.helper.StringHelper;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.network.simple.SimpleChannel;
 

@@ -18,6 +18,9 @@ public class PlayerProgressCapability {
 	}
 	
 	public void addProgress(Progress progress) {
+		if (progress == null) {
+			throw new NullPointerException("The added progress cannot be null.");
+		}
 		this.progressTracker.add(progress);
 	}
 	

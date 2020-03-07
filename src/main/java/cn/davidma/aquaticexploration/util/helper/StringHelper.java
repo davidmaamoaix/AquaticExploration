@@ -1,4 +1,4 @@
-package cn.davidma.aquaticexploration.util;
+package cn.davidma.aquaticexploration.util.helper;
 
 import cn.davidma.aquaticexploration.common.AquaticExploration;
 import net.minecraft.util.ResourceLocation;

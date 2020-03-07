@@ -4,7 +4,7 @@ import java.util.List;
 
 import cn.davidma.aquaticexploration.common.network.DisplayInfoMessagePacket;
 import cn.davidma.aquaticexploration.common.network.PacketManager;
-import cn.davidma.aquaticexploration.util.EntityHelper;
+import cn.davidma.aquaticexploration.util.helper.EntityHelper;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.item.ItemEntity;
