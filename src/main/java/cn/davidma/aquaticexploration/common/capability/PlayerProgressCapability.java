@@ -24,4 +24,8 @@ public class PlayerProgressCapability {
 	public void removeProgress(Progress progress) {
 		this.progressTracker.remove(progress);
 	}
+	
+	public Set<Progress> getProgressTracker() {
+		return this.progressTracker;
+	}
 }

@@ -11,25 +11,21 @@ import net.minecraft.util.text.ITextComponent;
  */
 public class DisplayInfoMessagePacket {
 	
-	private final String text;
+	private final ITextComponent text;
 	
-	public DisplayInfoMessagePacket(String text) {
+	public DisplayInfoMessagePacket(ITextComponent text) {
 		this.text = text;
 	}
 	
-	public DisplayInfoMessagePacket(ITextComponent text) {
-		this(text.getFormattedText());
-	}
-	
 	public DisplayInfoMessagePacket(PacketBuffer buf) {
-		this(buf.readString());
+		this(buf.readTextComponent());
 	}
 	
 	public void encode(PacketBuffer buf) {
-		buf.writeString(this.text);
+		buf.writeTextComponent(this.text);
 	}
 	
-	public String getText() {
+	public ITextComponent getText() {
 		return this.text;
 	}
 }

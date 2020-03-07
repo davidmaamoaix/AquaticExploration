@@ -2,11 +2,12 @@ package cn.davidma.aquaticexploration.common.item;
 
 import java.util.List;
 
-import cn.davidma.aquaticexploration.common.entity.FancyItemEntity;
 import cn.davidma.aquaticexploration.common.network.DisplayInfoMessagePacket;
 import cn.davidma.aquaticexploration.common.network.PacketManager;
+import cn.davidma.aquaticexploration.util.EntityHelper;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.fluid.Fluids;
@@ -45,7 +46,7 @@ public class AncientShellItem extends Item {
 				ItemStack heldStack = player.inventory.getCurrentItem();
 				heldStack.setCount(heldStack.getCount() - 1);
 				
-				FancyItemEntity entity = new FancyItemEntity(
+				ItemEntity entity = new ItemEntity(
 					ctx.getWorld(),
 					pos.getX() + 0.5,
 					pos.getY() + 0.5,
@@ -55,7 +56,7 @@ public class AncientShellItem extends Item {
 				entity.setNoGravity(true);
 				entity.setNoDespawn();
 				entity.setMotion(0, 0, 0);
-				entity.shouldEmitStreaks(true);
+				EntityHelper.addStreaks(entity);
 				ctx.getWorld().addEntity(entity);
 			} else {
 				ITextComponent text = new TranslationTextComponent("chat.aquaticexploration.not_ocean");
@@ -73,7 +74,8 @@ public class AncientShellItem extends Item {
 	
 	@Override
 	public void addInformation(
-			ItemStack stack, World world, List<ITextComponent> tooltip, ITooltipFlag flag) {
+		ItemStack stack, World world, List<ITextComponent> tooltip, ITooltipFlag flag) {
+		
 		String key = I18n.format("tooltip.aquaticexploration.ancient_shell");
 		ITextComponent text = new StringTextComponent(key);
 		text.applyTextStyle(TextFormatting.LIGHT_PURPLE);
