@@ -1,8 +1,10 @@
 package cn.davidma.aquaticexploration.common.progress;
 
 import cn.davidma.aquaticexploration.common.AquaticExploration;
+import cn.davidma.aquaticexploration.common.item.AquaticItems;
 import cn.davidma.aquaticexploration.util.helper.StringHelper;
 import cn.davidma.aquaticexploration.util.struct.LazyValue;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod.EventBusSubscriber;
@@ -23,7 +25,8 @@ public class AquaticProgresses {
 	@SubscribeEvent
 	public static void registerProgresses(final RegistryEvent.Register<Progress> event) {
 		event.getRegistry().registerAll(
-			new Progress().withPos(0, 0).setRegistryName(StringHelper.loc("shell_pickup"))
+			new Progress().withPos(0, 0).withDisplay(new ItemStack(AquaticItems.ANCIENT_SHELL.get()))
+			.setRegistryName(StringHelper.loc("shell_pickup"))
 		);
 	}
 }

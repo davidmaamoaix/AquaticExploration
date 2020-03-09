@@ -3,12 +3,14 @@ package cn.davidma.aquaticexploration.common.progress;
 import java.util.HashSet;
 import java.util.Set;
 
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.registries.ForgeRegistryEntry;
 
 public class Progress extends ForgeRegistryEntry<Progress> {
 
 	private int xPos;
 	private int yPos;
+	private ItemStack displayStack;
 	private Set<Progress> parents;
 	private Set<Progress> children;
 	
@@ -20,6 +22,12 @@ public class Progress extends ForgeRegistryEntry<Progress> {
 	public Progress withPos(int x, int y) {
 		this.xPos = x;
 		this.yPos = y;
+		
+		return this;
+	}
+	
+	public Progress withDisplay(ItemStack stack) {
+		this.displayStack = stack;
 		
 		return this;
 	}
@@ -42,6 +50,10 @@ public class Progress extends ForgeRegistryEntry<Progress> {
 	
 	public int getY() {
 		return this.yPos;
+	}
+	
+	public ItemStack getDisplayStack() {
+		return this.displayStack.copy();
 	}
 	
 	public Set<Progress> getParents() {

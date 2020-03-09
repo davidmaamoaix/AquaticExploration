@@ -3,6 +3,7 @@ package cn.davidma.aquaticexploration.common;
 import cn.davidma.aquaticexploration.common.entity.AquaticEntities;
 import cn.davidma.aquaticexploration.common.item.AquaticItems;
 import cn.davidma.aquaticexploration.common.network.PacketManager;
+import cn.davidma.aquaticexploration.common.particle.AquaticParticles;
 import net.minecraftforge.fml.common.Mod;
 
 @Mod(AquaticExploration.MOD_ID)
@@ -17,6 +18,7 @@ public class AquaticExploration {
 		
 		AquaticItems.init();
 		AquaticEntities.init();
+		AquaticParticles.init();
 		
 		PacketManager.init();
 	}

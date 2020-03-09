@@ -51,7 +51,7 @@ public class FancyItemEntityRenderer extends ItemRenderer {
 		GlStateManager.depthMask(false);
 		GlStateManager.pushMatrix();
 		
-		for(int i = 0; i < Math.min((f + f * f) / 2.0F * 60, maxStreakAmount); ++i) {
+		for(int i = 0; i < maxStreakAmount; i++) {
 			GlStateManager.rotatef(random.nextFloat() * 360, 1, 0, 0);
 			GlStateManager.rotatef(random.nextFloat() * 360, 0, 1, 0);
 			GlStateManager.rotatef(random.nextFloat() * 360, 0, 0, 1);

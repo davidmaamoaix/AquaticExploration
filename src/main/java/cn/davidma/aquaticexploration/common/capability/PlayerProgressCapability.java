@@ -31,4 +31,8 @@ public class PlayerProgressCapability {
 	public Set<Progress> getProgressTracker() {
 		return this.progressTracker;
 	}
+	
+	public void copyFrom(PlayerProgressCapability other) {
+		this.progressTracker = new HashSet<>(other.getProgressTracker());
+	}
 }

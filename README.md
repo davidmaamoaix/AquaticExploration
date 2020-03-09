@@ -3,7 +3,7 @@ A temporary repo for one of my previous mod (that was in the process of updating
 
 ## Repository Guide
 The structure of this project is... a bit convoluted (at least to a sleepy person like me). Just in case you as the viewer get lost or I forget what I was doing due to my terrible memory, this section provides an illustration more convoluted than the project structure itself of the project structure.
-Normally, the following contents should be distributed as Javadocs (or alternatively comments) in their according class; however, that sounds like a lot of work to the viewer, so here it is.
+Normally, the following sections should be distributed as Javadocs (or alternatively comments) in their according class; however, that sounds like a lot of work to the viewer, so here it is.
 
 ### Naming Convention
 - Registry Name (without prefix): ```daniel_the_bad_person```

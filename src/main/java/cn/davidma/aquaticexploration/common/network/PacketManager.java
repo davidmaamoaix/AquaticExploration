@@ -1,6 +1,6 @@
 package cn.davidma.aquaticexploration.common.network;
 
-import cn.davidma.aquaticexploration.client.util.ClientPacketHandler;
+import cn.davidma.aquaticexploration.client.misc.ClientPacketHandler;
 import cn.davidma.aquaticexploration.util.helper.StringHelper;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.network.simple.SimpleChannel;
@@ -24,6 +24,13 @@ public class PacketManager {
 			DisplayInfoMessagePacket::encode,
 			DisplayInfoMessagePacket::new,
 			ClientPacketHandler::onDisplayInfoMessagePacket
+		);
+		INSTANCE.registerMessage(
+			index++,
+			SyncProgressCapabilityPacket.class,
+			SyncProgressCapabilityPacket::encode,
+			SyncProgressCapabilityPacket::new,
+			ClientPacketHandler::onSyncProgressCapabilityPacket
 		);
 	}
 }

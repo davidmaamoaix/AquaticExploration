@@ -1,4 +1,4 @@
-package cn.davidma.aquaticexploration.client.util;
+package cn.davidma.aquaticexploration.client.misc;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.text.ITextComponent;
