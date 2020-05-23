@@ -1,5 +1,5 @@
 # AquaticExploration
-A temporary repo for one of my previous mod (that was in the process of updating to 1.14).
+A test mod for learning the changes in the 1.14 update.
 
 ## Repository Guide
 The structure of this project is... a bit convoluted (at least to a sleepy person like me). Just in case you as the viewer get lost or I forget what I was doing due to my terrible memory, this section provides an illustration more convoluted than the project structure itself of the project structure.
